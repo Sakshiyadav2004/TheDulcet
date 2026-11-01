@@ -3,7 +3,7 @@ from django.contrib.auth.models import User  # or use your UserCopy model
 from django.utils import timezone
 from datetime import timedelta
 
-# UserCopy model for reference
+
 class UserCopy(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
     password = models.CharField(max_length=25, null=True, blank=True)
@@ -17,7 +17,7 @@ class UserCopy(models.Model):
     def __str__(self):
         return self.user.username
 
-# Menu model for different menu categories (e.g., Beverages, Starters)
+
 class Menu(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True)

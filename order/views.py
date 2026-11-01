@@ -16,8 +16,6 @@ from .models import DeliverySettings
 from .forms import LocationForm
 
 from django.contrib.auth import logout
-import google.generativeai as genai
-
 
 import os
 
